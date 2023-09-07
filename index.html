@@ -61,14 +61,15 @@
       <a href="https://google.com">Fallback Link für Google</a>
     </noscript>
 
-    <h2>Erzeuge ajax Link mit starker Verzögerung</h2>
+    <h2>Erzeuge ajax Link mit 10 Sekunden Verzögerung</h2>
+    Bestanden mit 5 Sekunden.
     <a id="deleayedAjaxLink" href="#">loading ...</a>
     <script>
       setTimeout(function() {
-        // delayed by 5 seconds
+        // delayed by 10 seconds
         document.getElementById("deleayedAjaxLink").innerHTML = getContent('https://reposis-test.gbv.de/REP-1042/link-text.txt');
         document.getElementById("deleayedAjaxLink").setAttribute('href', getContent('https://reposis-test.gbv.de/REP-1042/link-url.txt'));
-      }, 5000);
+      }, 10000);
     </script>
 
   </body>
