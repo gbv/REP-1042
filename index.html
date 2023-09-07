@@ -55,25 +55,7 @@
 
       document.getElementById("ajaxLink").innerHTML = getContent('https://reposis-test.gbv.de/REP-1042/link-text.txt');
       document.getElementById("ajaxLink").setAttribute('href', getContent('https://reposis-test.gbv.de/REP-1042/link-url.txt'));
-/*
-      if (window.XMLHttpRequest)
-      {// code for IE7+, Firefox, Chrome, Opera, Safari
-          xmlhttp=new XMLHttpRequest();
-      }
-      else
-      {// code for IE6, IE5
-          xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
-      }
-      xmlhttp.onreadystatechange=function()
-      {
-          if (xmlhttp.readyState==4 && xmlhttp.status==200)
-          {
-            document.getElementById("ajaxLink").innerHTML = this.responseText;
-          }
-      }
-      xmlhttp.open("GET", 'https://reposis-test.gbv.de/REP-1042/link-text.txt', true );
-      xmlhttp.send();
-*/
+
     </script>
     <noscript>
       <a href="https://google.com">Fallback Link für Google</a>
