@@ -4,6 +4,24 @@
     <meta name="google-site-verification" content="9vcmgQYua-djpx36HAgEKZ1nqimlCoKoOq1QPucIBow" />
   </head>
   <body>
-    <div>Test</div>
+    <h1>Link zum Volltext fehlt in dem HTML, das Google indexiert</h1>
+    <script>
+      document.body.appendChild(
+        Object.assign(
+          document.createElement('a'),
+          {
+            href : 'https://google.com',
+            innerHTML : 'Generierter Link für Google'
+          }
+        )
+      )
+    </script>
+    <noscript>
+      <a href="https://google.com">Fallback Link für Google</a>
+    </noscript>
   </body>
 </html>
+
+<script>
+
+</script>
